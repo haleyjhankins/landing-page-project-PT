@@ -1,13 +1,14 @@
 :root {
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --right-button-hover-color: #ffd063;
 }
 
-html{
+/* Hero Section */
+
+html {
   background-color: #A0CADA;
 }
 
-.logo{
+.logo {
   height: 50px;
   width: 50px;
   margin-left: 3%;
@@ -20,7 +21,7 @@ html{
 }
 
 /* Split Left */
-.split-left{
+.split-left {
   float: left;
   width: 50%;
 }
@@ -40,51 +41,42 @@ html{
 
 /* Split Right */
 
-.split-right{
+.split-right {
   float: left;
   width: 50%;
   margin-top: 5%;
   text-align: left;
 }
 
-h1{
+h1 {
   font-family: 'Raleway Bold', sans-serif;
   color: white;
+  margin-top: -3%;
+}
 
-}
-h2{
+h2 {
   font-family: 'Raleway Bold', sans-serif;
+  margin-top: 3%;
 }
-h3{
+h3 {
   font-family: 'Roboto', sans-serif;
-  line-height: 40px;
   padding-right: 15%;
+  padding-top: 1%;
 }
 
-.strikethough-price {
-  text-decoration:line-through;
-  color: white;
-  float: left;
-  font-family: 'Raleway Bold', sans-serif;
-  margin-right: 10px;
-  color: black;
-
-}
-
-.sale-price {
-  float: left;
-  font-family: 'Raleway Bold', sans-serif;
-  color: white;
+iframe {
+  margin-bottom: 3%;
+  margin-left: 13%;
 }
 
 .button {
   display: block;
   position: relative;
-  left: 28%;
+  left: 35%;
   top: 40%;
   height: 2.7rem;
   padding-top: 1.3rem;
-  width: 30rem;
+  width: 20rem;
   text-align: center;
   color: #fff;
   background-color: #F5C10F;
@@ -99,6 +91,34 @@ h3{
   transform: translateX(-50%);
 }
 
+.button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+
+.price {
+  height: 75px;
+  padding-left: 20%;
+}
+
+.strikethough-price {
+  text-decoration:line-through;
+  color: white;
+  float: left;
+  font-family: 'Raleway Bold', sans-serif;
+  margin-right: 15px;
+  color: black;
+}
+
+.sale-price {
+  float: left;
+  font-family: 'Raleway Bold', sans-serif;
+  color: red;
+  text-align: center;
+}
+
+
 .split.left .button:hover {
   background-color: var(--left-button-hover-color);
   border-color: var(--left-button-hover-color);
@@ -107,4 +127,132 @@ h3{
 .split.right .button:hover {
   background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
+}
+
+/* What's Inside Section */
+
+.container-2 {
+  text-align: center;
+  font-family: 'Raleway Bold', sans-serif;
+  color: black;
+  margin-top: 3%;
+  height: 900px;
+  background-color: white;
+  clear: both;
+}
+
+.container-2 h1 {
+  color: black;
+  font-family: 'Raleway Bold', sans-serif;
+}
+
+.container-2 img {
+  width: 500px;
+  height: 500px;
+}
+
+/* Testimonials Section */
+
+.container-3 {
+  text-align: center;
+  font-family: 'Raleway Bold', sans-serif;
+  color: black;
+  height: 900px;
+  background-color: white;
+  clear: both;
+}
+
+.split-top {
+  width: 100%;
+}
+
+.split-bottom {
+  width: 100%;
+}
+
+.headshot-container {
+  background-color: #F4F3F4;
+  height: 450px;
+}
+
+#paul-headshot {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+
+h1.about-paul {
+  color: black;
+  display: inline-block;
+  font-family: 'Raleway Bold', sans-serif;
+  margin-left: -20%;
+  margin-top: 2%;
+
+
+}
+
+
+
+
+
+
+/* Media Queries  */
+@media (max-width: 800px) {
+  .split-left {
+    width: 100%;
+    }
+
+    .split-right {
+      width: 100%;
+
+    }
+
+    h1 {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-family: 'Raleway Bold', sans-serif;
+      margin-top: 3%;
+    }
+    h3 {
+      font-family: 'Roboto', sans-serif;
+      padding-top: 1%;
+    }
+
+    iframe {
+      margin-bottom: 3%;
+      margin-left: 13%;
+    }
+    .button {
+      display: block;
+      position: relative;
+      height: 2.7rem;
+      padding-top: 1.3rem;
+      margin-left: 8%;
+      width: 15rem;
+      text-align: center;
+      color: #fff;
+      background-color: #F5C10F;
+      box-shadow: 2px 2px 4px #6d6d6d;
+      border: 1px solid #F5C10F;
+      border-radius: 4px;
+      font-size: 1.3rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+@media(max-height: 700px) {
+  .button{
+    top: 70%;
+  }
 }
