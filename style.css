@@ -10,6 +10,7 @@ html{
 .logo{
   height: 50px;
   width: 50px;
+  margin-left: 3%;
 }
 
 .container {
@@ -33,6 +34,7 @@ html{
    -ms-transition: all 1.75s ease;
    -o-transition: all 1.75s ease;
     transition: all 1.75s ease;
+    text-align: center;
 }
 
 
@@ -51,10 +53,28 @@ h1{
 
 }
 h2{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway Bold', sans-serif;
 }
 h3{
   font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  padding-right: 15%;
+}
+
+.strikethough-price {
+  text-decoration:line-through;
+  color: white;
+  float: left;
+  font-family: 'Raleway Bold', sans-serif;
+  margin-right: 10px;
+  color: black;
+
+}
+
+.sale-price {
+  float: left;
+  font-family: 'Raleway Bold', sans-serif;
+  color: white;
 }
 
 .button {
