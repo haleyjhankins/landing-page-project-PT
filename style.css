@@ -24,6 +24,18 @@ html{
   width: 50%;
 }
 
+/* Fade In */
+
+#fadewrap {
+    opacity: 0;
+   -webkit-transition: all 1.75s ease;
+   -moz-transition: all 1.75s ease;
+   -ms-transition: all 1.75s ease;
+   -o-transition: all 1.75s ease;
+    transition: all 1.75s ease;
+}
+
+
 /* Split Right */
 
 .split-right{
