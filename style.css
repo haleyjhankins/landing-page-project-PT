@@ -175,7 +175,6 @@ iframe {
   text-align: center;
   font-family: 'Raleway Bold', sans-serif;
   color: black;
-  height: 900px;
   background-color: white;
   clear: both;
 }
@@ -189,7 +188,7 @@ iframe {
 }
 
 .headshot-container {
-  background-color: #F4F3F4;
+  background-color: #e5e5e5;
   height: 450px;
 }
 
@@ -207,12 +206,99 @@ h1.about-paul {
   font-family: 'Raleway Bold', sans-serif;
   margin-left: -20%;
   margin-top: 2%;
+}
 
+h3.about-paul {
+  line-height: 150%;
+  width: 70%;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+/* Testimonials */
+
+.Testimonials {
+  background: #F2F2F2;
+  height: 300px;
+              /* padding-top: 55px; */
+  color: #777;
+  position: relative;
+  overflow: hidden
+}
+
+.Testimonials blockquote {
+  width:85%;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 87%;
+}
+
+.Testimonials blockquote:before {
+  content:open-quote" "
+}
+
+.Testimonials blockquote:after {
+  content:" "close-quote
+}
+
+.Testimonials h4 {
+  text-align: center;
+  margin: 35px 0 50px
 }
 
 
+/* .Testemonials input{display: inline-block;} */
 
+.Testimonials input[ type="radio"] {
+  display: none
+}
+
+.Testimonials label {
+  padding:0  9px;
+  cursor: pointer;
+  border:2px solid #EDC345;
+  margin:10px;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.Testimonials aside {
+  width: 122px;
+  margin: 0 auto;
+  position:absolute;
+  bottom: 15%;
+  right: 50%;
+  transform: translatex(50%)
+}
+
+ .Testimonials label:hover {
+   background-color: #EDC345;
+}
+
+.Testimonials input + div {
+  opacity: 1;
+   transition: all 1s ease-out;
+    width:100%;
+    position: absolute;
+    top: 350px;
+}
+
+.Testimonials input[id="slide1"]:checked ~ aside label[for="slide1"],
+.Testimonials input[id="slide2"]:checked ~ aside label[for="slide2"],
+.Testimonials input[id="slide3"]:checked ~ aside label[for="slide3"]
+
+{background-color: #EDC345;border:none}
+
+
+.Testimonials input[id="slide1"]:checked + div,
+.Testimonials input[id="slide2"]:checked + div,
+.Testimonials input[id="slide3"]:checked + div
+ {opacity: 1;top:40px}
 
 
 
