@@ -136,7 +136,8 @@ iframe {
   font-family: 'Raleway Bold', sans-serif;
   color: black;
   margin-top: 3%;
-  height: 900px;
+  height: 700px;
+  width: 100%;
   background-color: white;
   clear: both;
 }
@@ -144,11 +145,28 @@ iframe {
 .container-2 h1 {
   color: black;
   font-family: 'Raleway Bold', sans-serif;
+  margin-bottom: 5%;
+  margin-top: -3%;
 }
 
 .container-2 img {
   width: 500px;
   height: 500px;
+}
+
+.product-description {
+  margin-left: 15%;
+}
+
+.product-description img {
+  width: 70px;
+  height: 70px;
+  margin-left: 15%;
+}
+
+.product-description h3 {
+  width: 50%;
+  padding-bottom: 5%;
 }
 
 /* Testimonials Section */
