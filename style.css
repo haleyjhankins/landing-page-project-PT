@@ -14,10 +14,10 @@ html {
   margin-left: 3%;
 }
 
-.container {
+.container-1 {
   clear: both;
-  content: "";
   display: table;
+  height: 1000px;
 }
 
 /* Split Left */
@@ -26,8 +26,17 @@ html {
   width: 50%;
 }
 
-/* Fade In */
+/* Split Right */
+.split-right {
+  float: left;
+  width: 40%;
+  /* margin-top: 5%; */
+  text-align: left;
+  height: 100%;
+  padding-right: 10%;
 
+}
+/* Fade In */
 #fadewrap {
     opacity: 0;
    -webkit-transition: all 1.75s ease;
@@ -38,42 +47,37 @@ html {
     text-align: center;
 }
 
+.paul-pic {
+  height: 1000px;
+  width: 524px;
 
-/* Split Right */
-
-.split-right {
-  float: left;
-  width: 50%;
-  margin-top: 5%;
-  text-align: left;
 }
 
-h1 {
+.split-right h1 {
   font-family: 'Raleway Bold', sans-serif;
   color: white;
-  margin-top: -3%;
+  margin-top: 45px;
 }
 
-h2 {
+.split-right h2 {
   font-family: 'Raleway Bold', sans-serif;
   margin-top: 3%;
 }
-h3 {
+.split-right h3 {
   font-family: 'Roboto', sans-serif;
-  padding-right: 15%;
   padding-top: 1%;
 }
 
 iframe {
-  margin-bottom: 3%;
-  margin-left: 13%;
+  margin: 0 auto;
+  display: block;
+
 }
 
 .button {
   display: block;
   position: relative;
-  left: 35%;
-  top: 40%;
+  margin: 10px auto 0 auto;
   height: 2.7rem;
   padding-top: 1.3rem;
   width: 20rem;
@@ -88,7 +92,6 @@ iframe {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  transform: translateX(-50%);
 }
 
 .button:hover {
@@ -98,8 +101,9 @@ iframe {
 
 
 .price {
-  height: 75px;
-  padding-left: 20%;
+  padding-top: 25px;
+  margin: 0 auto;
+  width: 190px;
 }
 
 .strikethough-price {
@@ -336,7 +340,7 @@ h3.about-paul {
       position: relative;
       height: 2.7rem;
       padding-top: 1.3rem;
-      margin-left: 8%;
+      /* margin-left: 8%; */
       width: 15rem;
       text-align: center;
       color: #fff;
@@ -352,11 +356,3 @@ h3.about-paul {
       transform: translateX(-50%);
     }
   }
-
-
-
-@media(max-height: 700px) {
-  .button{
-    top: 70%;
-  }
-}
