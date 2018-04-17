@@ -2,68 +2,73 @@
   --right-button-hover-color: #ffd063;
 }
 
-/* Hero Section */
+/* Product Intro (Container-1) */
 
 html {
   background-color: #A0CADA;
 }
 
+body {
+  margin: 0;
+}
+
 .logo {
   height: 50px;
   width: 50px;
+  margin-top: 10px;
   margin-left: 3%;
 }
 
 .container-1 {
-  clear: both;
-  display: table;
   height: 1000px;
 }
 
 /* Split Left */
-.split-left {
+
+.container-1-left {
   float: left;
   width: 50%;
 }
 
-/* Split Right */
-.split-right {
-  float: left;
-  width: 40%;
-  /* margin-top: 5%; */
-  text-align: left;
-  height: 100%;
-  padding-right: 10%;
+/* Image Fade In */
 
-}
-/* Fade In */
 #fadewrap {
-    opacity: 0;
-   -webkit-transition: all 1.75s ease;
-   -moz-transition: all 1.75s ease;
-   -ms-transition: all 1.75s ease;
-   -o-transition: all 1.75s ease;
-    transition: all 1.75s ease;
-    text-align: center;
+  opacity: 0;
+  -webkit-transition: all 1.75s ease;
+  -moz-transition: all 1.75s ease;
+  -ms-transition: all 1.75s ease;
+  -o-transition: all 1.75s ease;
+  transition: all 1.75s ease;
+  text-align: center;
 }
 
 .paul-pic {
-  height: 1000px;
-  width: 524px;
-
+  width: 80%;
 }
 
-.split-right h1 {
+/* Split Right */
+
+.container-1-right {
+  float: left;
+  width: 40%;
+  text-align: left;
+  height: 100%;
+  padding-right: 10%;
+}
+
+
+.container-1-right h1 {
   font-family: 'Raleway Bold', sans-serif;
   color: white;
   margin-top: 45px;
 }
 
-.split-right h2 {
+.container-1-right h2 {
   font-family: 'Raleway Bold', sans-serif;
   margin-top: 3%;
 }
-.split-right h3 {
+
+.container-1-right h3 {
   font-family: 'Roboto', sans-serif;
   padding-top: 1%;
 }
@@ -71,7 +76,6 @@ html {
 iframe {
   margin: 0 auto;
   display: block;
-
 }
 
 .button {
@@ -99,7 +103,6 @@ iframe {
   border-color: var(--right-button-hover-color);
 }
 
-
 .price {
   padding-top: 25px;
   margin: 0 auto;
@@ -107,7 +110,7 @@ iframe {
 }
 
 .strikethough-price {
-  text-decoration:line-through;
+  text-decoration: line-through;
   color: white;
   float: left;
   font-family: 'Raleway Bold', sans-serif;
@@ -122,28 +125,34 @@ iframe {
   text-align: center;
 }
 
-
-.split.left .button:hover {
-  background-color: var(--left-button-hover-color);
-  border-color: var(--left-button-hover-color);
-}
-
-.split.right .button:hover {
-  background-color: var(--right-button-hover-color);
-  border-color: var(--right-button-hover-color);
-}
-
-/* What's Inside Section */
+/* What's Inside Section (container-2) */
 
 .container-2 {
   text-align: center;
   font-family: 'Raleway Bold', sans-serif;
   color: black;
   margin-top: 3%;
-  height: 700px;
+  height: 770px;
   width: 100%;
   background-color: white;
   clear: both;
+}
+
+.container-2-left {
+  width: 50%;
+  float: left;
+}
+
+.product-pic {
+  width: 90%;
+}
+
+.container-2-right {
+  width: 40%;
+  padding: 100px 5% 0;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .container-2 h1 {
@@ -153,19 +162,9 @@ iframe {
   margin-top: -3%;
 }
 
-.container-2 img {
-  width: 500px;
-  height: 500px;
-}
-
-.product-description {
-  margin-left: 15%;
-}
-
-.product-description img {
+.container-2-right img {
   width: 70px;
   height: 70px;
-  margin-left: 15%;
 }
 
 .product-description h3 {
@@ -173,43 +172,41 @@ iframe {
   padding-bottom: 5%;
 }
 
-/* Testimonials Section */
+/* Testimonials Section (container-3) */
 
 .container-3 {
   text-align: center;
   font-family: 'Raleway Bold', sans-serif;
   color: black;
-  background-color: white;
   clear: both;
-}
-
-.split-top {
-  width: 100%;
-}
-
-.split-bottom {
-  width: 100%;
-}
-
-.headshot-container {
   background-color: #e5e5e5;
   height: 450px;
+}
+
+.container-3-left {
+  width: 30%;
+  float: left;
+  padding-top: 10px;
 }
 
 #paul-headshot {
   width: 300px;
   height: 300px;
-  float: left;
   margin-top: 5%;
-  padding-left: 2%;
+  margin: 0 auto;
+}
+
+.container-3-right {
+  width: 70%;
+  float: left;
+  padding-top: 150px;
 }
 
 h1.about-paul {
   color: black;
-  display: inline-block;
   font-family: 'Raleway Bold', sans-serif;
-  margin-left: -20%;
-  margin-top: 2%;
+  padding-top: 25px;
+  margin: 0;
 }
 
 h3.about-paul {
@@ -221,19 +218,18 @@ h3.about-paul {
   transform: translate(-50%, -50%);
 }
 
-/* Testimonials */
+/* Testimonials (container-4) */
 
 .Testimonials {
   background: #F2F2F2;
   height: 300px;
-              /* padding-top: 55px; */
   color: #777;
   position: relative;
   overflow: hidden
 }
 
 .Testimonials blockquote {
-  width:85%;
+  width: 85%;
   margin: 0 auto;
   font-style: italic;
   text-align: center;
@@ -243,11 +239,11 @@ h3.about-paul {
 }
 
 .Testimonials blockquote:before {
-  content:open-quote" "
+  content: open-quote" "
 }
 
 .Testimonials blockquote:after {
-  content:" "close-quote
+  content: " "close-quote
 }
 
 .Testimonials h4 {
@@ -256,17 +252,15 @@ h3.about-paul {
 }
 
 
-/* .Testemonials input{display: inline-block;} */
-
 .Testimonials input[ type="radio"] {
   display: none
 }
 
 .Testimonials label {
-  padding:0  9px;
+  padding: 0 9px;
   cursor: pointer;
-  border:2px solid #EDC345;
-  margin:10px;
+  border: 2px solid #EDC345;
+  margin: 10px;
   border-radius: 50%;
   transition: all .5s;
 }
@@ -274,85 +268,94 @@ h3.about-paul {
 .Testimonials aside {
   width: 122px;
   margin: 0 auto;
-  position:absolute;
+  position: absolute;
   bottom: 15%;
   right: 50%;
   transform: translatex(50%)
 }
 
- .Testimonials label:hover {
-   background-color: #EDC345;
+.Testimonials label:hover {
+  background-color: #EDC345;
 }
 
-.Testimonials input + div {
+.Testimonials input+div {
   opacity: 1;
-   transition: all 1s ease-out;
-    width:100%;
-    position: absolute;
-    top: 350px;
+  transition: all 1s ease-out;
+  width: 100%;
+  position: absolute;
+  top: 350px;
 }
 
-.Testimonials input[id="slide1"]:checked ~ aside label[for="slide1"],
-.Testimonials input[id="slide2"]:checked ~ aside label[for="slide2"],
-.Testimonials input[id="slide3"]:checked ~ aside label[for="slide3"]
+.Testimonials input[id="slide1"]:checked~aside label[for="slide1"], .Testimonials input[id="slide2"]:checked~aside label[for="slide2"], .Testimonials input[id="slide3"]:checked~aside label[for="slide3"] {
+  background-color: #EDC345;
+  border: none
+}
 
-{background-color: #EDC345;border:none}
-
-
-.Testimonials input[id="slide1"]:checked + div,
-.Testimonials input[id="slide2"]:checked + div,
-.Testimonials input[id="slide3"]:checked + div
- {opacity: 1;top:40px}
-
-
+.Testimonials input[id="slide1"]:checked+div, .Testimonials input[id="slide2"]:checked+div, .Testimonials input[id="slide3"]:checked+div {
+  opacity: 1;
+  top: 40px
+}
 
 /* Media Queries  */
-@media (max-width: 800px) {
-  .split-left {
-    width: 100%;
-    }
 
-    .split-right {
-      width: 100%;
-
-    }
-
-    h1 {
-      text-align: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-    h2 {
-      font-family: 'Raleway Bold', sans-serif;
-      margin-top: 3%;
-    }
-    h3 {
-      font-family: 'Roboto', sans-serif;
-      padding-top: 1%;
-    }
-
-    iframe {
-      margin-bottom: 3%;
-      margin-left: 13%;
-    }
-    .button {
-      display: block;
-      position: relative;
-      height: 2.7rem;
-      padding-top: 1.3rem;
-      /* margin-left: 8%; */
-      width: 15rem;
-      text-align: center;
-      color: #fff;
-      background-color: #F5C10F;
-      box-shadow: 2px 2px 4px #6d6d6d;
-      border: 1px solid #F5C10F;
-      border-radius: 4px;
-      font-size: 1.3rem;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-decoration: none;
-      transform: translateX(-50%);
-    }
+@media (max-width: 1040px) {
+  .container-1 {
+    height: 980px;
   }
+  .container-1-left {
+    width: 100%;
+  }
+
+  .paul-pic {
+    width: 300px;
+  }
+
+  .container-1-right {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: 'Raleway Bold', sans-serif;
+    margin-top: 3%;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1%;
+  }
+
+  .container-2-left, .container-2-right {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-pic {
+    width: 300px;
+  }
+
+  .container-3 {
+    height: 700px;
+  }
+
+  .container-3-left, .container-3-right {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  #paul-headshot {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-paul {
+    padding-top: 300px;
+  }
+
+}
